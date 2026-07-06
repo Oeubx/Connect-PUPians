@@ -1,0 +1,116 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "post_user",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "post_timeposted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notifications",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "made_to",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "notifTime",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "chats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "user_UIDs",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "chats_TimeStamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "post_comments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "comment_postref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "comment_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "study_feedbacks",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "studypost_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "user_feedbackDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "group_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "post_timeposted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "class_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "post_timeposted",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "stud_act_response",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "class_actMat_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "response_Time",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
